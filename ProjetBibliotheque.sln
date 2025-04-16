@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetBibliotheque", "ProjetBibliotheque\ProjetBibliotheque.csproj", "{6C0AA19F-ED06-45F2-AC25-BBB7362C054B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bibliotheque.data", "Bibliotheque.data\Bibliotheque.data.csproj", "{DCC35004-D332-4CAD-BC4F-8046900B6614}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C0AA19F-ED06-45F2-AC25-BBB7362C054B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C0AA19F-ED06-45F2-AC25-BBB7362C054B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C0AA19F-ED06-45F2-AC25-BBB7362C054B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C0AA19F-ED06-45F2-AC25-BBB7362C054B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCC35004-D332-4CAD-BC4F-8046900B6614}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCC35004-D332-4CAD-BC4F-8046900B6614}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCC35004-D332-4CAD-BC4F-8046900B6614}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCC35004-D332-4CAD-BC4F-8046900B6614}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
