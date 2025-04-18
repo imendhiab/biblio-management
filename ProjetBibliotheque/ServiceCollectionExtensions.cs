@@ -13,7 +13,7 @@ namespace ProjetBibliotheque
         public static void RegisterForms(this IServiceCollection services)
         {
             //services.AddTransient<MainForm>();
-           services.AddTransient<LivreForms.GestionLivre>();
+           services.AddTransient<LivreForms.LivreListForm>();
             //services.AddTransient<MembreForms.CategoryDetailsForm>();
             //services.AddTransient<EmpruntForms.RecipesListForm>();
 

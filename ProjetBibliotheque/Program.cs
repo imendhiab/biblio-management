@@ -34,7 +34,7 @@ namespace ProjetBibliotheque
             ServiceProvider = services.BuildServiceProvider();
 
             // Récupération de l'instance de la fenêtre principale via l'injection de dépendances
-            var mainForm = ServiceProvider.GetRequiredService<GestionLivre>();
+            var mainForm = ServiceProvider.GetRequiredService<LivreListForm>();
 
             // Démarrage de l'application avec la fenêtre principale
             Application.Run(mainForm);
