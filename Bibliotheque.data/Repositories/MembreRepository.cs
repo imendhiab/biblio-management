@@ -32,6 +32,7 @@ namespace Bibliotheque.data.Repositories
         // Méthode pour ajouter un nouveau membre
         public void Add(Membre membre)
         {
+
             _context.Membres.Add(membre);
             _context.SaveChanges();
         }

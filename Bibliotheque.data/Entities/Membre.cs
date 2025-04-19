@@ -41,7 +41,9 @@ namespace Bibliotheque.data.Entities
 
         public DateTime date_deb_abonn { get; set; }
         public DateTime date_expir_abonn{ get; set; }
+        
         public string etat_abonn { get; set; }
+        public string type_abonn { get;set; }
         public int duree_abonnement{ get; set; }
 
 

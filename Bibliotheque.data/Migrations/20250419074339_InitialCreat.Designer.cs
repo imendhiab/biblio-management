@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Bibliotheque.data.Migrations
 {
     [DbContext(typeof(BibliothequeContext))]
-    [Migration("20250416155707_InitialCreate2")]
-    partial class InitialCreate2
+    [Migration("20250419074339_InitialCreat")]
+    partial class InitialCreat
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -117,6 +117,10 @@ namespace Bibliotheque.data.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("etat_abonn")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("type_abonn")
                         .IsRequired()
                         .HasColumnType("TEXT");
 

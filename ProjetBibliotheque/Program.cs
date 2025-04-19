@@ -3,6 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Bibliotheque.data;
 using ProjetBibliotheque.LivreForms;
 using Bibliotheque.data.Repositories;
+using ProjetBibliotheque.MembreForms;
 
 namespace ProjetBibliotheque
 {
@@ -20,10 +21,10 @@ namespace ProjetBibliotheque
             // Création d'une collection de services pour l'injection de dépendances
             var services = new ServiceCollection();
 
-            //Enregistrer RecipeContext avec les options SQlite
+            //Enregistrer dbContext avec les options SQlite
             services.AddBiblioDataService();
             // Enregistre le repository 
-            services.AddScoped<LivreRepository>();
+            //services.AddScoped<LivreRepository>();
             //Appliquer les migrations au demarrage
             services.ApplyMigrationsForBiblioDataService();
 
@@ -34,7 +35,8 @@ namespace ProjetBibliotheque
             ServiceProvider = services.BuildServiceProvider();
 
             // Récupération de l'instance de la fenêtre principale via l'injection de dépendances
-            var mainForm = ServiceProvider.GetRequiredService<LivreListForm>();
+                //var mainForm = ServiceProvider.GetRequiredService<LivreListForm>();
+            var mainForm = ServiceProvider.GetRequiredService<MembreListForm>();
 
             // Démarrage de l'application avec la fenêtre principale
             Application.Run(mainForm);
